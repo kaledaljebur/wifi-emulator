@@ -1,0 +1,13 @@
+# Created by Kaled Aljebur
+# https://github.com/kaledaljebur/wifi-emulator
+
+[Desktop Entry]
+Version=1.0
+Name=WiFi Emulator
+Exec=pkexec /usr/bin/wifi-emulator
+# Exec=wifi-emulator
+Icon=wifi-emulator
+Terminal=false
+Type=Application
+Categories=Utility;Network;
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+# Created by Kaled Aljebur
+# https://github.com/kaledaljebur/wifi-emulator
+
+REAL_USER=$(logname)
+
+export DISPLAY=:0
+export XAUTHORITY=/home/$REAL_USER/.Xauthority
+
+exec /usr/bin/python3 /usr/share/wifi-emulator/wifi-emulator.py
