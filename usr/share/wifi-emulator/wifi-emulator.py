@@ -128,7 +128,7 @@ network={
         win.title(f"Edit: {filename}")
         win.geometry("700x500")
 
-        with open(filename, "r") as f:
+        with open(f"/var/log/wifi-emulator/{filename}", "r") as f:
             content = f.read()
 
         text = scrolledtext.ScrolledText(win, wrap=tk.WORD, bg="black", fg="white", insertbackground="white")
@@ -138,7 +138,7 @@ network={
         ttk.Button(win, text="💾 Save", style="Custom.TButton", command=lambda: self.save_conf(filename, text, win)).pack(pady=5)
 
     def save_conf(self, filename, widget, window):
-        with open(filename, "w") as f:
+        with open(f"/var/log/wifi-emulator/{filename}", "w") as f:
             f.write(widget.get("1.0", tk.END))
         self.log(f"✅ {filename} saved.")
         window.destroy()
