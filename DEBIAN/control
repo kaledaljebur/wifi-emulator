@@ -3,7 +3,7 @@ Version: 1.0
 Section: net
 Priority: optional
 Architecture: all
-Depends: python3, hostapd, wpasupplicant, aircrack-ng
+Depends: python3, python3-tk, hostapd, wpasupplicant, aircrack-ng
 Maintainer: Kaled Aljebur kaledaljebur@gmail.com
 Description: A GUI WiFi emulator tool for labs and learning
  This tool simulates access point and client interactions using virtual WiFi interfaces.
