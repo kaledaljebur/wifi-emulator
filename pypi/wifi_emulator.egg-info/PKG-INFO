@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: wifi-emulator
-Version: 0.1.0
+Version: 0.1.2
 Summary: WiFi emulator and attack lab GUI for Kali Linux
 Author-email: Kaled Aljebur <kaled.aljebur@gmail.com>
 Project-URL: Homepage, https://github.com/kaledaljebur/wifi-emulator
@@ -13,7 +13,7 @@ Welcome to WiFi Emulator!
 Please let me know if you have any questions or suggestions.
 Kaled Aljebur,
 
-Note: use Ctrl+C to copy any command from this window
+Please note: it is only been tested on Kali so far.
 
 Run the steps in the following order:
 1. Generate Access Point Conf file
@@ -68,3 +68,8 @@ cybersecurity teaching labs. The traffic generated between wlan0 and wlan1 is
 realistic and suitable for hands-on research.
 
 # Install .deb in Kali
+- To install:
+    - Download [wifi-emulator.deb](https://github.com/kaledaljebur/wifi-emulator/blob/main/wifi-emulator.deb)
+    - Use `sudo apt update && sudo apt install -y ~/Downloads/wifi-emulator.deb`
+- To remove:
+    - `sudo dpkg -r wifi-emulator`
