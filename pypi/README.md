@@ -5,6 +5,12 @@ Kaled Aljebur,
 
 Please note: it is only been tested on Kali so far.
 
+## To install, in Kali terminal
+1. Install the package using `pipx install wifi-emulator`
+2. Then run this command to install it as an app `wifi-emulator-setup`
+3. Then you can start it from the applications menu in Kali, search for `WiFi Emulator`
+
+
 Run the steps in the following order:
 1. Generate Access Point Conf file
 2. Edit ap.conf if needed
